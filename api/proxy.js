@@ -10,8 +10,8 @@ module.exports = (req, res) => {
   //   ) {
   //     target = "http://106.15.2.32:6969";
   //   }
-  if (req.url.startsWith("/ServiceLogin")){
-    target = "https://accounts.google.com";
+  if (req.url.startsWith("/v3/upload")){
+    target = "https://lens.google.com";
   }
 
   createProxyMiddleware({
